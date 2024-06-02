@@ -42,7 +42,7 @@ const Anasayfa = sequelize.define("anasayfa", {
     },
     egitim:{
         type: DataTypes.TEXT,
-        allowNull: false
+        allowNull: true
     },
 });
 

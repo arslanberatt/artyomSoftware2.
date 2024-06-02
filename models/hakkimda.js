@@ -10,7 +10,7 @@ const Hakkimda= sequelize.define('Hakkimda', {
     },
     hakkimda1: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
     },
     hakkimda2: {
         type: DataTypes.TEXT,
