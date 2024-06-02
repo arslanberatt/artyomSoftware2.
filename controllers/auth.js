@@ -8,7 +8,7 @@ exports.getLogin = async (req,res)=>{
             title:"Login"
         })
     } catch (error) {
-        next(error);
+        console.log(error)
     }
 };
 
@@ -17,7 +17,7 @@ exports.getLogout = async (req,res)=>{
         await req.session.destroy();
         return res.redirect("/account/login")
     } catch (error) {
-        next(error);
+        console.log(error)
     }
 };
 
@@ -51,6 +51,6 @@ exports.postLogin = async (req,res)=>{
         })
 
     } catch (error) {
-        next(error);
+        console.log(error)
     }
 };

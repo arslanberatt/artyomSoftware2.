@@ -17,7 +17,7 @@ exports.projelerim = async function(req, res) {
             repos:repos
         });
     } catch(err) {
-        next(err);
+        console.log(err)
     }
 }
 
@@ -39,7 +39,7 @@ exports.hakkimda = async function(req, res) {
             sertifika: sertifika,
         });
     } catch(err) {
-        next(err);
+        console.log(err)
     }
 }
 
@@ -59,6 +59,6 @@ exports.anasayfa =  async function(req, res) {
             repos:repos,
         });
     } catch(err) {
-        next(err);
+        console.log(err)
     }
 }
