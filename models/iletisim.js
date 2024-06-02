@@ -39,11 +39,11 @@ const Iletisim = sequelize.define("iletisim", {
 });
 
 async function sync(){
-    await Iletisim.sync({alter: true});
+    await Iletisim.sync({force: true});
 
         const count = await Iletisim.count();
         if(count == 0){
-            await Iletisim.bulkCreate({
+            await Iletisim.create({
                 aciklama:"Artyom Software, web uygulamalarınızı hayata geçirmek için tam donanımlı bir full stack web geliştirme hizmeti sunar. Müşteri odaklı yaklaşımımızla, ihtiyaçlarınıza uygun çözümler üretir ve projenizin her adımında size rehberlik ederiz. Güvenilirlik, kalite ve müşteri memnuniyeti bizim önceliğimizdir. İşletmenizi dijital dünyada ileri taşımak için bugün bizimle iletişime geçin!",
                 proje1:"Artyom Software",
                 proje2:"Uzm. Kl. Psk. Derya Arslan",

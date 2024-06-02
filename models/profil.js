@@ -23,7 +23,7 @@ const Profil = sequelize.define("profil", {
 });
 
 async function sync(){
-    await Profil.sync({force: true});
+    await Profil.sync({alter: true});
 
         const count = await Profil.count();
         if(count == 0){
