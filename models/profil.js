@@ -30,7 +30,7 @@ async function sync(){
             await Profil.bulkCreate({
                 pozisyon:"Full-Stack Developer",
                 nick:"Artyom",
-                resim: "213-1717093483778.jpeg"
+                resim: "a.jpeg"
             })
         }
 }

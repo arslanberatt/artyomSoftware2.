@@ -60,7 +60,7 @@ async function sync(){
                 node:"59",
                 mysql:"53",
                 mongo:"45",
-                egitim:"dasdlöandjasmdks",
+                egitim:"Topkapı Üniversitesi'nde Bilgisayar Mühendisliği eğitimimle temel bilgisayar bilimi konularını öğrendim ve belediye kursları ile web geliştirme becerilerimi güçlendirdim. Çevrimiçi platformlardaki kurslarla ileri düzey bilgi edindim. Şimdi, web geliştirme kariyerim için sağlam bir temele sahibim ve sürekli öğrenmeye devam ediyorum.",
             })
         }
 }
