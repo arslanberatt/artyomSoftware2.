@@ -18,7 +18,7 @@ const User = sequelize.define("user", {
 }, { timestamps: true});
 
 async function sync(){
-    await User.sync({alter: true});
+    await User.sync({force: true});
 
     const count = await User.count();
     if (count == 0) {
