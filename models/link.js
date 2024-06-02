@@ -27,11 +27,11 @@ const Link = sequelize.define("link", {
 });
 
 async function sync(){
-    await Link.sync({alter: true});
+    await Link.sync({force: true});
 
         const count = await Link.count();
         if(count == 0){
-            await Link.bulkCreate({
+            await Link.create({
                 website:"artyomsoftware.com",
                 github:"arslanberatt",
                 linkedin:"berat-arslan",

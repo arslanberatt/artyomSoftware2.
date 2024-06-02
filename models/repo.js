@@ -48,11 +48,11 @@ const Repo = sequelize.define("repo", {
 });
 
 async function sync(){
-    await Repo.sync({alter: true});
+    await Repo.sync({force: true});
 
         const count = await Repo.count();
         if(count == 0){
-            await Repo.bulkCreate({
+            await Repo.create({
                 name:"Uzm. Kl. Psk. Derya Arslan",
                 type:"Dinamik Website",
                 feature1:"Admin Paneli",
@@ -64,7 +64,7 @@ async function sync(){
                 isActive:true
             })
 
-            await Repo.bulkCreate({
+            await Repo.create({
                 name:"Artyom Software",
                 type:"Dinamik Website",
                 feature1:"Admin Paneli",

@@ -15,12 +15,12 @@ const Sertifika = sequelize.define("sertifika", {
 });
 
 async function sync() {
-    await Sertifika.sync({ alter: true });
+    await Sertifika.sync({ force: true });
 
     const count = await Sertifika.count();
     if (count == 0) {
-        await Sertifika.bulkCreate({ sertifika: "JAVA ile Programlamaya Giriş Sertifikası - BTK Akademi" });
-        await Sertifika.bulkCreate({ sertifika: "Javascript Temelleri Sertifikası - BTK Akademi" });
+        await Sertifika.create({ sertifika: "JAVA ile Programlamaya Giriş Sertifikası - BTK Akademi" });
+        await Sertifika.create({ sertifika: "Javascript Temelleri Sertifikası - BTK Akademi" });
     }
 }
 

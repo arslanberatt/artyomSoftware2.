@@ -31,11 +31,11 @@ const Hedef = sequelize.define("hedef", {
 });
 
 async function sync(){
-    await Hedef.sync({alter: true});
+    await Hedef.sync({force: true});
 
         const count = await Hedef.count();
         if(count == 0){
-            await Hedef.bulkCreate({
+            await Hedef.create({
                 baslik:"Yıllık Hedef",
                 baslik2:"Projeler ve Denemeler",
                 hedef:"10",

@@ -47,11 +47,11 @@ const Anasayfa = sequelize.define("anasayfa", {
 });
 
 async function sync(){
-    await Anasayfa.sync({alter: true});
+    await Anasayfa.sync({force: true});
 
         const count = await Anasayfa.count();
         if(count == 0){
-            await Anasayfa.bulkCreate({
+            await Anasayfa.create({
                 hakkimdaMain:"Ben Muhammet Berat Arslan. Bilgisayar Mühendisliği öğrencisi olarak full stack web geliştirme konusunda kendimi geliştirmekteyim. Hem frontend (kullanıcı arayüzü) hem de backend (sunucu tarafı) teknolojilerinde deneyim kazanarak kapsamlı bir web geliştirme yetkinliği elde etmeyi hedefliyorum. İleri düzey projelerde çalışarak, hem teknik bilgimi artırmayı hem de kullanıcı odaklı çözümler üretmeyi amaçlıyorum.",
                 java:"43",
                 javascript:"56",
