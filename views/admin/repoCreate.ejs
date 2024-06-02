@@ -1,0 +1,85 @@
+
+
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+
+<body>
+    <%- include('../partials/adminNav') %>
+    <h1 class="mt-5 offset-1 col-10 offset-md-4 col-md-6">
+        <%= title %>
+    </h1>
+    <div class="container mt-5  offset-1 col-10 offset-md-4 col-md-6">
+        <div class="row">
+            <div class="col">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="row mb-3 mt-4">
+                        <label for="name" class="col-sm-2 col-form-label">İsim:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="type" class="col-sm-2 col-form-label">Tür:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="type" name="type">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="feature1" class="col-sm-2 col-form-label">Özellik 1:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="feature1" name="feature1">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="feature2" class="col-sm-2 col-form-label">Özellik 2:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="feature2" name="feature2">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="github" class="col-sm-2 col-form-label">Github Reposu:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="github" name="github">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="web" class="col-sm-2 col-form-label">Web Linki:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="web" name="web">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="imageUrl" class="col-sm-2 col-form-label">Resim:</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control" id="imageUrl" name="imageUrl">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-7 offset-2">
+                            <div class="form-check">
+                                <input class="form-check-input" style="display: block !important;" type="checkbox"
+                                    value="on" name="main" id="main">
+                                <label class="form-check-label" for="main">
+                                    Anasayfa
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" style="display: block !important;" type="checkbox"
+                                    value="on" name="isActive" id="isActive">
+                                <label class="form-check-label" for="isActive">
+                                    Aktif
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

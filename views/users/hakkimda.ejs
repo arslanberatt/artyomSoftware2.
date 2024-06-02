@@ -1,0 +1,223 @@
+<section class="headerSection">
+  <%- include("../partials/head") %>
+</section>
+
+<body style="background-color: #eeeeee !important;">
+  <section class="navSection">
+    <%- include("../partials/nav") %>
+  </section>
+  <section class="backgroundImgSection">
+    <%- include("../partials/backgroundImg") %>
+  </section>
+
+  <section style="background-color: #eee;">
+    <div class="hackerLogo d-flex justify-content-center align-items-center container my-5" style="margin-top: 150px !important;">
+      <img height="50px" src="/images/hacker.png" class="mb-5" alt="hacker image">
+    </div>
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <img src="images/<%= hakkimda.image %>" alt="avatar" class="img-fluid" style="width: 150px;">
+              <h5 class="my-3">Berat Arslan</h5>
+              <p class="text-muted mb-1">Full Stack Developer</p>
+              <p class="text-muted mb-4">Bahçelievler, İstanbul</p>
+              <div class="d-flex justify-content-center mb-2">
+                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                  class="btn btn-outline-primary me-1">LinkedIn</button>
+                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">GitHub</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 mb-lg-0">
+            <div class="card-body p-0">
+              <ul class="list-group list-group-flush rounded-3">
+                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                  <i class="bi bi-globe fa-lg text-warning"></i>
+                  <a href="artyomsoftware.com" style="font-weight: 300;" class="mb-0 text-dark"><%= link.website %></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                  <i class="bi bi-github fa-lg" style="color: #55acee;"></i>
+                  <a href="https://github.com/arslanberatt" style="font-weight: 300;" class="mb-0 text-dark"><%= link.github %></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                  <i class="bi bi-linkedin fa-lg" style="color: #ac2bac;"></i>
+                  <a href="https://www.linkedin.com/in/berat-arslan-75440bb6/" style="font-weight: 300;" class="mb-0 text-dark"><%= link.linkedin %></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                  <i class="bi bi-instagram fa-lg" style="color: #3b5998;"></i>
+                  <a href="https://www.instagram.com/arslanberatt.m?igsh=MWxrZHoxYWJ3b3RmbQ==" style="font-weight: 300;" class="mb-0 text-dark"><%= link.instagram %></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">İsim</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Muhammet Berat Arslan</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Email</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"><%= iletisim.mail %></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Telefon</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">544-251-8830</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Adres</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Hürriyet Mah. Hürriyet Cad. Bahçelievler, İstanbul</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4 mb-md-0">
+                <div class="card-body">
+                  <p class="mb-4"><span class="text-primary font-italic me-1">İleri</span>seviye yeteneklerim
+                  </p>
+                  <p class="mb-1" style="font-size: .77rem;">HTML/ HTML 5</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: <%= anasayfa.html %>%" aria-valuenow="<%= anasayfa.html %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">BootStrap</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width:<%= hakkimda.bs5 %>%" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">MySQL</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: <%= anasayfa.mysql %>%" aria-valuenow="<%= anasayfa.mysql %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">JavaScript</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: <%= anasayfa.javascript %>%" aria-valuenow="<%= anasayfa.javascript %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;"> NodeJs</p>
+                  <div class="progress rounded mb-2" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: <%= anasayfa.node %>%" aria-valuenow="<%= anasayfa.node %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">CSS3</p>
+                  <div class="progress rounded mb-2" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: <%= anasayfa.css %>%" aria-valuenow="<%= anasayfa.css %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4 mb-md-0">
+                <div class="card-body">
+                  <p class="mb-4"><span class="text-primary font-italic me-1">Orta</span>seviye yeteneklerim
+                  </p>
+                  <p class="mb-1" style="font-size: .77rem;">Java</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: <%= anasayfa.java %>%" aria-valuenow="<%= anasayfa.java %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">React</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width:<%= hakkimda.react %>%" aria-valuenow="<%= hakkimda.react %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">Angular</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width:<%= hakkimda.angular %>%" aria-valuenow="<%= hakkimda.angular %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">Spring Boot</p>
+                  <div class="progress rounded" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width:<%= hakkimda.spring %>%" aria-valuenow="<%= hakkimda.spring %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">Netbeans</p>
+                  <div class="progress rounded mb-2" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width:<%= hakkimda.netbeans %>%" aria-valuenow="<%= hakkimda.netbeans %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <p class="mt-4 mb-1" style="font-size: .77rem;">MongoDB</p>
+                  <div class="progress rounded mb-2" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: <%= anasayfa.mongo %>%" aria-valuenow="<%= anasayfa.mongo %>" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 mt-4 p-5 ">
+          <div>
+            <h5 class="section-title text-primary mb-3 mb-sm-4"></h5>
+            <p><%- hakkimda.hakkimda1 %></p>
+            <p><%- hakkimda.hakkimda2 %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card rounded-3">
+          <div class="card-body p-4">
+
+            <p class="mb-2"><span class="h2 me-2">Sertifikalarım</span> 
+            <p class="text-muted pb-2">2024 -</p>
+
+            <ul class="list-group rounded-0">
+              <% sertifika.reverse().forEach(e => { %>
+                <li class="list-group-item border-0 d-flex align-items-center ps-0">
+                  <%= e.sertifika %>
+                </li>
+              <% }) %>
+            </ul>
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center mx-3 mb-0" style="color: #a2aab7;">...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="footerSection">
+    <%- include("../partials/footer") %>
+  </section>
+
+  <script src="web.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

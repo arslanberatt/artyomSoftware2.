@@ -1,0 +1,49 @@
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+
+<body>
+    <%- include('../partials/adminNav') %>
+    <h1 class="mt-5 offset-1 col-10 offset-md-4 col-md-6">
+        <%= title %>
+    </h1>
+    <div class="container mt-5  offset-1 col-10 offset-md-4 col-md-6">
+        <div class="row">
+            <div class="col">
+                <form action="" method="post">
+                    <div class="row mb-3 mt-4">
+                        <label for="website" class="col-sm-2 col-form-label">Website:</label>
+                        <div class="col-sm-8">
+                            <input type="text" value="<%= link.website %>" class="form-control" id="website" name="website">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="github" class="col-sm-2 col-form-label">Github:</label>
+                        <div class="col-sm-8">
+                            <input type="text" value="<%= link.github %>" class="form-control" id="github" name="github">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="linkedin" class="col-sm-2 col-form-label">LinkedIn:</label>
+                        <div class="col-sm-8">
+                            <input type="text" value="<%= link.linkedin %>" class="form-control" id="linkedin" name="linkedin">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="instagram" class="col-sm-2 col-form-label">instagram:</label>
+                        <div class="col-sm-8">
+                            <input type="text" value="<%= link.instagram %>" class="form-control" id="instagram" name="instagram">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="offset-9 col-sm-1">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

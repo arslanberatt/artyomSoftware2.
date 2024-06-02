@@ -1,0 +1,28 @@
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+
+<body>
+    <%- include('../partials/adminNav') %>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3 text-center">
+               <div class="alert alert-secondary">
+                <p class="mb-3">
+                    <b><%= sertifika.sertifika %> </b> <br> isimli sertifika kaydınız silmek istiyor musunuz?
+                </p>
+                <form method="post">
+                    <input type="hidden" name="categoryid" value="<%= sertifika.id %>">
+                    <button class="btn btn-danger" type="submit">Evet</button>
+                    <a href="/admin/sertifikalist" class="btn btn-primary">Vazgeç</a>
+                </form>
+               </div>
+            </div>
+        </div>
+    </div>
+       
+</body>
+</html>
+
+
+

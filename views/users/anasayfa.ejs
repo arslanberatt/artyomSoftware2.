@@ -1,0 +1,188 @@
+<section class="headerSection">
+  <%- include("../partials/head") %>
+</section>
+
+<body class="bg-light">
+  <section class="navSection">
+    <%- include("../partials/nav") %>
+  </section>
+  <section class="backgroundImgSection">
+    <%- include("../partials/backgroundImg") %>
+  </section>
+
+
+  <section class="section2 mt-5">
+    <div class="hackerLogo d-flex justify-content-center align-items-center container my-5" style="margin-top: 150px !important;">
+      <img height="50px" src="/images/hacker.png" class="mb-5" alt="hacker image">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="offset-lg-0 col-lg-12 offset-1 col-10  mb-4 mb-sm-5">
+          <div>
+            <h5 class="section-title mb-3 mb-sm-4" style="font-size: 24px;">Merhaba,</h5>
+            <p style="text-indent: 1rem;"><%= anasayfa.hakkimdaMain %></p>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-sm-5">
+          <div class="card card-style1 border-0">
+            <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img src="/images/<%= profil.resim %>" class="me-3 img-fluid offset-1 col-9" alt="...">
+                </div>
+                <div class="col-lg-6 px-xl-10">
+                  <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
+                    <h4 class="text-white mb-0">M. Berat ARSLAN</h4>
+                    <span class="text-light" style="font-size: small;"><%= profil.nick %></span>
+                  </div>
+                  <ul class="list-unstyled">
+                    <li class="mb-2 mb-xl-3 display-28"><span
+                        class="display-26 text-secondary me-2 font-weight-600">Pozisyon:</span><%= profil.pozisyon %>
+                    </li>
+                    <li class="mb-2 mb-xl-3 display-28"><span
+                        class="display-26 text-secondary me-2 font-weight-600">Email:</span> <%= iletisim.mail %>
+                    </li>
+                    <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">Telefon</span>
+                      544 - 251 - 8830</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-sm-5">
+          <div class="card p-3 mb-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <div class="icon"> <i class="bi bi-server"></i> Yıllık Hedef</div>
+                <div class="m-2">
+                  <h6 class="mb-0"></h6><span class="text-muted" style="font-size: small;">Son güncellenme tarihi: <br>
+                    1 gün önce</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <h3 class="heading"><%= hedef.baslik %> <br> <%= hedef.baslik2 %></h3>
+              <div class="mt-5">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: <%= hedef.ilerleme %>%" aria-valuenow="4" aria-valuemin="0"
+                    aria-valuemax="15"></div>
+                </div>
+                <div class="mt-3"> <span class="text1"><%= hedef.hedef %> adet içinden <span class="text2"><%= hedef.done %> adet yapıldı.
+                    </span></span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-12 mb-4 mb-sm-5">
+              <div class="mb-4 mb-sm-5">
+                <h5 class="section-title text-primary mb-3 mb-sm-4">Yeteneklerim</h5>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">Java</div>
+                    <div class="col-6 text-end"><%= anasayfa.java %>%</div>
+                  </div>
+                </div>
+                <div class="progress mb-3" style="height: 4px;">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:<%= anasayfa.java %>%" aria-valuemax="100"
+                    aria-valuemin="0" aria-valuenow="<%= anasayfa.java %>" role="progressbar"></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">JavaScript</div>
+                    <div class="col-6 text-end"><%= anasayfa.javascript %>%</div>
+                  </div>
+                </div>
+                <div class="progress mb-3" style="height: 4px;">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:<%= anasayfa.javascript %>%" aria-valuemax="100"
+                    aria-valuemin="0" aria-valuenow="<%= anasayfa.javascript %>" role="progressbar"></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">CSS3</div>
+                    <div class="col-6 text-end"><%= anasayfa.css %>%</div>
+                  </div>
+                </div>
+                <div class="progress mb-3" style="height: 4px;">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:<%= anasayfa.css %>%" aria-valuemax="100"
+                    aria-valuemin="0" aria-valuenow="<%= anasayfa.css %>" role="progressbar"></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">HTML / HTML 5</div>
+                    <div class="col-6 text-end"><%= anasayfa.html %>%</div>
+                  </div>
+                </div>
+                <div class="progress mb-3" style="height: 4px;">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:<%= anasayfa.html %>%" aria-valuemax="100"
+                    aria-valuemin="0" aria-valuenow="<%= anasayfa.html %>" role="progressbar"></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">NodeJs</div>
+                    <div class="col-6 text-end"><%= anasayfa.node %>%</div>
+                  </div>
+                </div>
+                <div class="progress mb-3" style="height: 4px;">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:<%= anasayfa.node %>%" aria-valuemax="100"
+                    aria-valuemin="0" aria-valuenow="<%= anasayfa.node %>" role="progressbar"></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">MySQL</div>
+                    <div class="col-6 text-end"><%= anasayfa.mysql %>%</div>
+                  </div>
+                </div>
+                <div class="progress mb-3" style="height: 4px;">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:<%= anasayfa.mysql %>%" aria-valuemax="100"
+                    aria-valuemin="0" aria-valuenow="<%= anasayfa.mysql %>" role="progressbar"></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">MongoDB</div>
+                    <div class="col-6 text-end"><%= anasayfa.mongo %>%</div>
+                  </div>
+                </div>
+                <div class="progress" style="height: 4px;">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:<%= anasayfa.mongo %>%" aria-valuemax="100"
+                    aria-valuemin="0" aria-valuenow="<%= anasayfa.mongo %>" role="progressbar"></div>
+                </div>
+              </div>
+              <div class="offset-lg-0 col-lg-12 offset-1 col-10 mb-4 mb-sm-5">
+                <h5 class="section-title mb-3 mb-sm-4" style="font-size: 24px;">Eğitim</h5>
+                <p style="text-indent: 1rem;"><%= anasayfa.egitim %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <% repos.reverse().forEach(repo=> { %>
+            <div class="col-12 col-sm-6 col-md-4 my-4">
+              <%- include("../partials/repo", repo) %>
+            </div>
+            <% }) %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footerSection">
+    <%- include("../partials/footer") %>
+  </section>
+
+  <script src="web.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

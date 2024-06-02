@@ -1,0 +1,25 @@
+<div class="card card-inverse card-info ms-3">
+    <img class="card-img-top p-2" src="/images/<%= imageUrl %>">
+    <div class="card-block">
+        <!-- <figure class="profile">
+            <img src="/images/213.jpeg" class="profile-avatar" alt="">
+        </figure> -->
+        <h4 class="card-title mt-3"><%= name %></h4>
+        <div class="meta card-text">
+            <a><%= type %></a>
+        </div>
+        <ul class="mt-3">
+            <li><%= feature1 %></li>
+            <li><%= feature2 %></li>
+            <% if (isActive) { %>
+                <li>Hala Aktif</li>
+            <% } else { %>
+                <li>Aktif Değil</li>
+            <% } %>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <a href="<%= web %>" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary float-end">Görüntüle</a>
+        <a href="<%= github %>" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary me-1 float-end">GitHub Reposu</a>
+    </div>
+</div>

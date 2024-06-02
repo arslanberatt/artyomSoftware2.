@@ -1,0 +1,40 @@
+<section class="headerSection">
+  <%- include("../partials/head") %>
+</section>
+
+<body class="bg-light">
+  <section class="navSection">
+    <%- include("../partials/nav") %>
+  </section>
+  <section class="backgroundImgSection">
+    <%- include("../partials/backgroundImg") %>
+  </section>
+  <section class="cardSection">
+    <div class="hackerLogo d-flex justify-content-center align-items-center container my-5" style="margin-top: 150px !important;">
+      <img height="50px" src="/images/hacker.png" class="mb-5" alt="hacker image">
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <% repos.reverse().forEach(repo => { %>
+              <div class="col-12 col-sm-6 col-md-4 my-4">
+                <%- include("../partials/repo", repo) %>
+              </div>
+          <% }) %>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="footerSection">
+    <%- include("../partials/footer") %>
+  </section>
+
+  
+
+  <script src="web.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

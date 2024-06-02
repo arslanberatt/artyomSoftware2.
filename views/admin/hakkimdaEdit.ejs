@@ -1,0 +1,79 @@
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+
+<body>
+    <%- include('../partials/adminNav') %>
+    <h1 class="mt-5 offset-1 col-10 offset-md-4 col-md-6">
+        <%= title %>
+    </h1>
+    <div class="container mt-5  offset-1 col-10 offset-md-4 col-md-6">
+            <div class="row">
+                <div class="col">
+                    <form action="" method="post"  enctype="multipart/form-data">
+                        <input type="hidden" name="image" value="<%= hakkimda.image %>">
+                        <div class="row mb-3 mt-4">
+                            <label for="hakkimda1" class="col-sm-2 col-form-label">Hakkımda:</label>
+                            <div class="col-sm-10">
+                                <textarea type="text" class="form-control" id="hakkimda1" name="hakkimda1"
+                                    rows="5"><%= hakkimda.hakkimda1 %></textarea>
+                                <textarea type="text" class="form-control mt-3" id="hakkimda2" name="hakkimda2"
+                                    rows="5"><%= hakkimda.hakkimda2 %></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-4">
+                            <label for="tür" class="col-sm-2 col-form-label">Yetenekler:</label>
+                            <div class="col-1">
+                                <input type="text" value="<%= hakkimda.bs5 %>" class="form-control" id="bs5"
+                                    placeholder="bs5" name="bs5">
+                            </div>
+                            <div class="col-1">
+                                <input type="text" value="<%= hakkimda.react %>" class="form-control" id="react"
+                                    placeholder="react" name="react">
+                            </div>
+                            <div class="col-1">
+                                <input type="text" value="<%= hakkimda.angular %>" class="form-control" id="angular"
+                                    placeholder="angular" name="angular">
+                            </div>
+                            <div class="col-1">
+                                <input type="text" value="<%= hakkimda.spring %>" class="form-control" id="spring"
+                                    placeholder="spring" name="spring">
+                            </div>
+                            <div class="col-1">
+                                <input type="text" value="<%= hakkimda.netbeans %>" class="form-control" id="netbeans"
+                                    placeholder="netbeans" name="netbeans">
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-4">
+                            <label for="image" class="col-sm-2 col-form-label">Resim:</label>
+                            <div class="col-sm-8">
+                                <img class="col-3 mb-3" src="/images/<%= hakkimda.image %>" alt="">
+                                <input type="file" value="<%= hakkimda.image %>" class="form-control" id="image" name="image">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="offset-9 col-sm-1">
+                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+        <script>
+            ClassicEditor
+                .create(document.querySelector('#hakkimda1'))
+                .catch(error => {
+                    console.error(error);
+                });
+            ClassicEditor
+                .create(document.querySelector('#hakkimda2'))
+                .catch(error => {
+                    console.error(error);
+                });
+        </script>
+</body>
+
+</html>

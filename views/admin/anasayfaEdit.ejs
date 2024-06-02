@@ -1,0 +1,67 @@
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+
+<body>
+    <%- include('../partials/adminNav') %>
+    <h1 class="mt-5 offset-1 col-10 offset-md-4 col-md-6">
+        <%= title %>
+    </h1>
+    <div class="container mt-5  offset-1 col-10 offset-md-4 col-md-6">
+        <div class="row">
+            <div class="col">
+                <form action="" method="post">
+                    <div class="row mb-3 mt-4">
+                        <label for="hakkimdaMain" class="col-sm-2 col-form-label">Hakkımda paragraf1:</label>
+                        <div class="col-sm-8">
+                            <textarea type="text" class="form-control" name="hakkimdaMain" rows="5"><%= anasayfa.hakkimdaMain %></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="hakkimdaMain2" class="col-sm-2 col-form-label">Hakkımda paragraf2:</label>
+                        <div class="col-sm-8">
+                            <textarea type="text" class="form-control" name="hakkimdaMain2" rows="5" placeholder="Gerekli kaldıkça dolurabilirsin"><%= anasayfa.hakkimdaMain2 %></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="tür" class="col-sm-2 col-form-label">Yeteneklerim:</label>
+                        <div class="col-1">
+                            <input type="text" value="<%= anasayfa.java %>" class="form-control" id="java" placeholder="java" name="java">
+                        </div>
+                        <div class="col-1">
+                            <input type="text" value="<%= anasayfa.javascript %>" class="form-control" id="javascript" placeholder="javascript" name="javascript">
+                        </div>
+                        <div class="col-1">
+                            <input type="text" value="<%= anasayfa.css %>" class="form-control" id="css" placeholder="css" name="css">
+                        </div>
+                        <div class="col-1">
+                            <input type="text" value="<%= anasayfa.html %>" class="form-control" id="html" placeholder="html" name="html">
+                        </div>
+                        <div class="col-1">
+                            <input type="text" value="<%= anasayfa.node %>" class="form-control" id="node" placeholder="node" name="node">
+                        </div>
+                        <div class="col-1">
+                            <input type="text" value="<%= anasayfa.mysql %>" class="form-control" id="mysql" placeholder="mysql" name="mysql">
+                        </div>
+                        <div class="col-1">
+                            <input type="text" value="<%= anasayfa.mongo %>" class="form-control" id="mongo" placeholder="mongo" name="mongo">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="egitim" class="col-sm-2 col-form-label">Eğitim:</label>
+                        <div class="col-sm-8">
+                            <textarea type="text" class="form-control" name="egitim" rows="5"><%= anasayfa.egitim %></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="offset-9 col-sm-1">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class=" col-md-3">
+                <h2 class="text-center mt-5">Kullanıcı Girişi</h2>
+                <% if (typeof message != "undefined") { %>
+                    <div class="alert alert-warning">
+                        <%= message %>
+                    </div>
+                <% } %>
+                <form method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control mt-3" name="username" placeholder="Kullanıcı Adı" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control mt-3" name="password" placeholder="Şifre" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block float-end mt-3">Giriş Yap</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

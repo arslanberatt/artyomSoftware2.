@@ -1,0 +1,55 @@
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+
+<body>
+    <%- include('../partials/adminNav') %>
+    <h1 class="mt-5 offset-1 col-10 offset-md-4 col-md-6">
+        <%= title %>
+    </h1>
+    <div class="container mt-5  offset-1 col-10 offset-md-4 col-md-6">
+        <div class="row">
+            <div class="col">
+                <form action="" method="post">
+                    <div class="row mb-3 mt-4">
+                        <label for="aciklama" class="col-sm-2 col-form-label">Açıklama:</label>
+                        <div class="col-sm-8">
+                            <textarea type="text" class="form-control" name="aciklama" rows="5"><%= iletisim.aciklama %></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="tür" class="col-sm-2 col-form-label">En İyiler:</label>
+                        <div class="col-3">
+                            <input type="text" value="<%= iletisim.proje1 %>" class="form-control" id="proje1" placeholder="proje1" name="proje1">
+                        </div>
+                        <div class="col-3">
+                            <input type="text" value="<%= iletisim.proje2 %>"  class="form-control" id="proje2" placeholder="proje2" name="proje2">
+                        </div>
+                        <div class="col-2">
+                            <input type="text" value="<%= iletisim.proje3 %>"  class="form-control" id="proje3" placeholder="proje3" name="proje3">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="tür" class="col-sm-2 col-form-label">Bana Ulaşın:</label>
+                        <div class="col-3">
+                            <input type="text" value="<%= iletisim.mail %>"  class="form-control" id="mail" placeholder="mail" name="mail">
+                        </div>
+                        <div class="col-3">
+                            <input type="text" value="<%= iletisim.mail2 %>"  class="form-control" id="mail2" placeholder="mail2" name="mail2">
+                        </div>
+                        <div class="col-2">
+                            <input type="text" value="<%= iletisim.telefon %>"  class="form-control" id="telefon" placeholder="telefon" name="telefon">
+                        </div>
+                        <div class="row mt-3">
+                            <div class="offset-9 col-sm-1">
+                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

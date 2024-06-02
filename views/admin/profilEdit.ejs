@@ -1,0 +1,45 @@
+<section class="headerSection">
+    <%- include("../partials/head") %>
+</section>
+
+<body>
+    <%- include('../partials/adminNav') %>
+    <h1 class="mt-5 offset-1 col-10 offset-md-4 col-md-6">
+        <%= title %>
+    </h1>
+    <div class="container mt-5  offset-1 col-10 offset-md-4 col-md-6">
+        <div class="row">
+            <div class="col">
+                <form method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="resim" value="<%= profil.resim %>">
+                    <div class="row mb-3 mt-4">
+                        <label for="pozisyon" class="col-sm-2 col-form-label">Pozisyon:</label>
+                        <div class="col-sm-8">
+                            <input type="text" value="<%= profil.pozisyon %>" class="form-control" id="pozisyon" name="pozisyon">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="nick" class="col-sm-2 col-form-label">Nick:</label>
+                        <div class="col-sm-8">
+                            <input type="text" value="<%= profil.nick %>" class="form-control" id="nick" name="nick">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-4">
+                        <label for="resim" class="col-sm-2 col-form-label">Resim:</label>
+                        <div class="col-sm-8">
+                            <img class="col-3 mb-3" src="/images/<%= profil.resim %>" alt="">
+                            <input type="file" value="<%= profil.resim %>" class="form-control" id="resim" name="resim">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="offset-9 col-sm-1">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
