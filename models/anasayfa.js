@@ -10,7 +10,7 @@ const Anasayfa = sequelize.define("anasayfa", {
     },
     hakkimdaMain: {
         type: DataTypes.TEXT,
-        allowNull: false
+        allowNull: true
     },
     java:{
         type: DataTypes.STRING,
