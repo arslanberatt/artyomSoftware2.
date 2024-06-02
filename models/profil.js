@@ -23,18 +23,17 @@ const Profil = sequelize.define("profil", {
 });
 
 async function sync(){
-    await Profil.sync({alter: true});
+    await Profil.sync({force: true});
 
         const count = await Profil.count();
         if(count == 0){
-            await Profil.bulkCreate({
+            await Profil.create({
                 pozisyon:"Full-Stack Developer",
                 nick:"Artyom",
                 resim: "a.jpeg"
             })
         }
 }
-
 sync();
 
 module.exports = Profil;
