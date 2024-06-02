@@ -27,7 +27,7 @@ const Link = sequelize.define("link", {
 });
 
 async function sync(){
-    await Link.sync({force: true});
+    await Link.sync({alter: true});
 
         const count = await Link.count();
         if(count == 0){

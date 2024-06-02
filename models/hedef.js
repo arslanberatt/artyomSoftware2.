@@ -31,7 +31,7 @@ const Hedef = sequelize.define("hedef", {
 });
 
 async function sync(){
-    await Hedef.sync({force: true});
+    await Hedef.sync({alter: true});
 
         const count = await Hedef.count();
         if(count == 0){

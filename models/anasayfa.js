@@ -47,7 +47,7 @@ const Anasayfa = sequelize.define("anasayfa", {
 });
 
 async function sync(){
-    await Anasayfa.sync({force: true});
+    await Anasayfa.sync({alter: true});
 
         const count = await Anasayfa.count();
         if(count == 0){

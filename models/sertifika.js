@@ -15,7 +15,7 @@ const Sertifika = sequelize.define("sertifika", {
 });
 
 async function sync() {
-    await Sertifika.sync({ force: true });
+    await Sertifika.sync({ alter: true });
 
     const count = await Sertifika.count();
     if (count == 0) {

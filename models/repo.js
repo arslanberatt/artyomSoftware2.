@@ -48,7 +48,7 @@ const Repo = sequelize.define("repo", {
 });
 
 async function sync(){
-    await Repo.sync({force: true});
+    await Repo.sync({alter: true});
 
         const count = await Repo.count();
         if(count == 0){

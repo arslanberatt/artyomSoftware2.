@@ -39,7 +39,7 @@ const Iletisim = sequelize.define("iletisim", {
 });
 
 async function sync(){
-    await Iletisim.sync({force: true});
+    await Iletisim.sync({alter: true});
 
         const count = await Iletisim.count();
         if(count == 0){
