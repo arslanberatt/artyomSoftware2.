@@ -20,11 +20,6 @@ const User = sequelize.define("user", {
 async function sync(){
     await User.sync({alter: true});
 
-    const count = await User.count();
-    if (count == 0) {
-        await User.create({ username: "artyom", email: "arslanberatt@outlook.com", password: await bcrypt.hash("arslanberatt2000.", 10)});
-        await User.create({ username: "admin1", email: "arslanberatt@hotmail.com", password: await bcrypt.hash("W15014928202", 10)});
-    }
 }
 
 sync();
