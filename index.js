@@ -44,8 +44,10 @@ app.use(usersRoutes);
 
 
 
-app.listen(process.env.PORT || 3003, () => {
-    console.log("node.js server at port 3003")
+const port = config.db.port || 3003;
+
+app.listen(port, () => {
+    console.log(`Node.js server running on port ${port}`);
 });
 
 
