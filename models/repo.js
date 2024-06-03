@@ -69,9 +69,9 @@ async function sync(){
                 type:"Dinamik Website",
                 feature1:"Admin Paneli",
                 feature2:"NodeJs ve MySQL tabanlı",
-                github:"https://github.com/arslanberatt/artyomsoftware",
-                web:"artyomsoftware.com",
-                imageUrl:"websayfam.png",
+                github:"https://github.com/arslanberatt/artyomSoftware2.",
+                web:"https://artyomsoftware.onrender.com",
+                imageUrl:"websayfam-1717422053101",
                 main:true,
                 isActive:true
             })

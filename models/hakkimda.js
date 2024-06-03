@@ -57,7 +57,7 @@ async function sync(){
                 angular:"19",
                 spring:"45",
                 netbeans:"37",
-                image:"2-1716571678227.jpeg",
+                image:"2-1717071842535.jpeg",
             })
         }
 }
