@@ -48,7 +48,7 @@ const Repo = sequelize.define("repo", {
 });
 
 async function sync(){
-    await Repo.sync({alter: true});
+    await Repo.sync({force: true});
 
         const count = await Repo.count();
         if(count == 0){
@@ -71,7 +71,7 @@ async function sync(){
                 feature2:"NodeJs ve MySQL tabanlı",
                 github:"https://github.com/arslanberatt/artyomSoftware2.",
                 web:"https://artyomsoftware.onrender.com",
-                imageUrl:"websayfam-1717422053101",
+                imageUrl:"websayfam-1717422053101.png",
                 main:true,
                 isActive:true
             })

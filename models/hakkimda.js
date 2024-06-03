@@ -45,7 +45,7 @@ const Hakkimda= sequelize.define('Hakkimda', {
 
 
 async function sync(){
-    await Hakkimda.sync({alter: true});
+    await Hakkimda.sync({force: true});
 
         const count = await Hakkimda.count();
         if(count == 0){
